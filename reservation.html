@@ -24,71 +24,89 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section reservation-hero">
         <div class="container form-layout">
-          <div class="form-intro">
+          <div class="form-intro reservation-intro">
+            <p class="eyebrow">Plan your visit</p>
             <h2>Request your stay</h2>
             <p>
               Share your travel preferences and our team will prepare a tailored reservation request for you.
             </p>
+            <ul class="feature-list">
+              <li>Personalized room suggestions</li>
+              <li>Fast support for special requests</li>
+              <li>Flexible options for dates and guests</li>
+            </ul>
           </div>
 
-          <form class="reservation-form">
-            <fieldset>
-              <legend>Guest details and stay preferences</legend>
-
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="guest-name">Guest Name</label>
-                  <input id="guest-name" name="guest-name" type="text" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input id="email" name="email" type="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="phone">Phone Number</label>
-                  <input id="phone" name="phone" type="tel" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="checkin">Check-In Date</label>
-                  <input id="checkin" name="checkin" type="date" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="checkout">Check-Out Date</label>
-                  <input id="checkout" name="checkout" type="date" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="guests">Number of Guests</label>
-                  <input id="guests" name="guests" type="number" min="1" max="8" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="room-preference">Room Preference</label>
-                  <select id="room-preference" name="room-preference">
-                    <option value="standard">Standard Room</option>
-                    <option value="deluxe">Deluxe Room</option>
-                    <option value="suite">Suite</option>
-                    <option value="accessible">Accessible Room</option>
-                  </select>
-                </div>
+          <div class="reservation-stack">
+            <div class="reservation-highlight">
+              <h3>Why travelers choose SmartStay+</h3>
+              <p>From city escapes to mountain retreats, every request is handled with care and style.</p>
+              <div class="pill-group">
+                <span class="pill">Flexible dates</span>
+                <span class="pill">Concierge help</span>
+                <span class="pill">Premium stays</span>
               </div>
-
-              <div class="form-group full-width">
-                <label for="requests">Special Requests</label>
-                <textarea id="requests" name="requests" rows="5" placeholder="Tell us about late check-in, dietary needs, accessibility support, or other requests."></textarea>
-              </div>
-            </fieldset>
-
-            <div class="form-actions">
-              <button class="button button-primary" type="submit">Submit Reservation Request</button>
             </div>
-          </form>
+
+            <form class="reservation-form">
+              <fieldset>
+                <legend>Guest details and stay preferences</legend>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="guest-name">Guest Name</label>
+                    <input id="guest-name" name="guest-name" type="text" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="tel" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="checkin">Check-In Date</label>
+                    <input id="checkin" name="checkin" type="date" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="checkout">Check-Out Date</label>
+                    <input id="checkout" name="checkout" type="date" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input id="guests" name="guests" type="number" min="1" max="8" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="room-preference">Room Preference</label>
+                    <select id="room-preference" name="room-preference">
+                      <option value="standard">Standard Room</option>
+                      <option value="deluxe">Deluxe Room</option>
+                      <option value="suite">Suite</option>
+                      <option value="accessible">Accessible Room</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="requests">Special Requests</label>
+                  <textarea id="requests" name="requests" rows="5" placeholder="Tell us about late check-in, dietary needs, accessibility support, or other requests."></textarea>
+                </div>
+              </fieldset>
+
+              <div class="form-actions">
+                <button class="button button-primary" type="submit">Submit Reservation Request</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
