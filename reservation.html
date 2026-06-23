@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Submit a reservation request through SmartStay+ Reservation Hub." />
+    <title>SmartStay+ Reservation Hub | Reservation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand-link" href="index.html">
+          <h1>SmartStay+ Reservation Hub</h1>
+        </a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="reservation.html" class="active">Reservation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container form-layout">
+          <div class="form-intro">
+            <h2>Request your stay</h2>
+            <p>
+              Share your travel preferences and our team will prepare a tailored reservation request for you.
+              This streamlined form is designed to be easy to use on desktops and mobile devices.
+            </p>
+          </div>
+
+          <form class="reservation-form">
+            <fieldset>
+              <legend>Guest details and stay preferences</legend>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="guest-name">Guest Name</label>
+                  <input id="guest-name" name="guest-name" type="text" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input id="phone" name="phone" type="tel" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="checkin">Check-In Date</label>
+                  <input id="checkin" name="checkin" type="date" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="checkout">Check-Out Date</label>
+                  <input id="checkout" name="checkout" type="date" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <input id="guests" name="guests" type="number" min="1" max="8" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="room-preference">Room Preference</label>
+                  <select id="room-preference" name="room-preference">
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="accessible">Accessible Room</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="5" placeholder="Tell us about late check-in, dietary needs, accessibility support, or other requests."></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Submit Reservation Request</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Student Name Placeholder</p>
+        <p>2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
