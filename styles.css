@@ -225,6 +225,60 @@ thead {
   background: #e5f0f4;
 }
 
+@media (max-width: 700px) {
+  .table-wrapper {
+    overflow-x: visible;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    min-width: 0;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--surface-color);
+    box-shadow: var(--shadow);
+  }
+
+  th[scope="row"] {
+    padding: 0 0 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.05rem;
+  }
+
+  td {
+    padding: 0.6rem 0;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--primary-color);
+    flex: 0 0 45%;
+  }
+}
+
 form fieldset {
   border: 1px solid var(--border-color);
   border-radius: 16px;
